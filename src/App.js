@@ -13,6 +13,7 @@ import SinglePost from "./components/SinglePost";
 function App() {
 
   const [showPost, setShowPost] = useState([])
+  // console.log(showPost)
 
   return (
     <BrowserRouter>
@@ -21,7 +22,7 @@ function App() {
           <Route path="/" element={<Welcome />} />
           <Route path="/create-a-post" element={<CreatePost showPost={showPost} setShowPost={setShowPost}   />} />
           <Route path="/show-current-posts" element={<ShowPost showPost={showPost} />} />
-          <Route path="/show-posts/:singlepost" element={<SinglePost showPost={showPost} />}
+          <Route path="/show-posts/:singlePost" element={<SinglePost showPost={showPost} />}
           />
         </Routes>
     </BrowserRouter>

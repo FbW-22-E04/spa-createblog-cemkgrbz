@@ -17,7 +17,6 @@ function CreatePost(props) {
     const handleSubmit = () => {
         props.setShowPost([...props.showPost, newPost])
         navigate("/show-current-posts")
-        console.log(newPost);
     }
 
     const handleChange = (e) => {
@@ -50,8 +49,6 @@ function CreatePost(props) {
                     name="textarea"
                     className="border-gray-400"
                     id="content"
-                    cols="30"
-                    rows="10"
                 ></textarea>
                 </label>
 
